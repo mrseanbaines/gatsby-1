@@ -1,9 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
-import { FaShoppingCart } from "react-icons/fa"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import React from "react"
+import { FaShoppingCart } from "react-icons/fa"
 
 const IndexPage = () => (
   <Layout>
