@@ -15,9 +15,11 @@ import Footer from "./Globals/Footer"
 
 const Layout = ({ children }) => (
   <>
-    <Navbar />
-    {children}
-    <Footer />
+    <div className="main">
+      <Navbar />
+      {children}
+    </div>
+    <Footer className="footer" />
   </>
 )
 
