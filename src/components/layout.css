@@ -22,6 +22,15 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 
+.oysterTitle {
+  padding-top: 150px;
+}
+
+/*
+.shopButton {
+  justify-content: center;
+}*/
+
 .text-green {
   color: var(--mainGreen);
 }
@@ -30,4 +39,33 @@ h6 {
   cursor: pointer;
   color: var(--mainGreen);
   font-size: 1.8rem;
+}
+
+.collapse.navbar-collapse {
+  margin-right: 240px;
+}
+
+.default-background {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-green {
+  color: var(--mainGreen);
+  border-color: var(--mainGreen);
+  border-width: 5px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.btn-green:hover {
+  background: var(--mainGreen);
+  color: var(--mainWhite);
+}
+
+.footer {
+  background: var(--mainDark);
 }

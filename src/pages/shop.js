@@ -5,19 +5,17 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 
-const IndexPage = ({ data }) => (
+const ShopPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
-    <BackgroundSection
-      img={data.img.childImageSharp.fluid}
-      title="Grow your own mushrooms."
-      styleClass="default-background"
-    />
+    <SEO title="Shop" />
+    <BackgroundSection title="Shop." styleClass="shop" />
+    */}
     <Info />
   </Layout>
 )
 
-export const query = graphql`
+{
+  /*export const query = graphql`
   {
     img: file(relativePath: { eq: "backgroundHome.jpg" }) {
       childImageSharp {
@@ -27,6 +25,7 @@ export const query = graphql`
       }
     }
   }
-`
+`*/
+}
 
-export default IndexPage
+export default ShopPage
