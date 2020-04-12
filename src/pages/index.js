@@ -15,7 +15,6 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
-    <Menu products={data.menu} />
   </Layout>
 )
 
@@ -25,24 +24,6 @@ export const query = graphql`
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-    menu: allContentfulMycotownProduct {
-      edges {
-        node {
-          id
-          title
-          description {
-            description
-          }
-          price
-          category
-          images {
-            fixed(width: 200, height: 200) {
-              ...GatsbyContentfulFixed_tracedSVG
-            }
-          }
         }
       }
     }
