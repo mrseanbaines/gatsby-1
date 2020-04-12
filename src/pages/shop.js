@@ -30,14 +30,15 @@ export const query = graphql`
         node {
           id
           title
+          slug
           description {
             description
           }
           price
           category
           images {
-            fixed(width: 200, height: 200) {
-              ...GatsbyContentfulFixed_tracedSVG
+            fluid(maxHeight: 200) {
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }

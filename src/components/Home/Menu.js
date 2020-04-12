@@ -72,13 +72,27 @@ export default class Menu extends Component {
                     className="col-11 col-md-3 my-4 d-flex
                    mx-auto"
                   >
-                    <div>
-                      <Link to="/">
-                        <Img fixed={node.images[0].fixed} />
+                    <div className="card" style={{ minHeight: "100%" }}>
+                      <Link to={`/shop/${node.slug}`}>
+                        <Img
+                          fluid={node.images[0].fluid}
+                          className="card-img-top"
+                        />
                       </Link>
                     </div>
                     {/*itm info */}
-
+                    <div className="card-body text-center">
+                      <h6>{node.title}</h6>
+                      <h6>£{node.price}</h6>
+                      <button className="btn btn-green mt-3">
+                        ADD TO CART
+                      </button>
+                      <a href="/contact">
+                        <button className="btn btn-green mt-3">
+                          MORE INFO
+                        </button>
+                      </a>
+                    </div>
                     {/*end of itm info */}
                   </div>
                 )
