@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import Title from "../Globals/Title"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 const getCategories = products => {
   let tempProducts = products.map(products => {
@@ -72,8 +73,13 @@ export default class Menu extends Component {
                    mx-auto"
                   >
                     <div>
-                      <Img fixed={node.images[0].fixed} />
+                      <Link to="/">
+                        <Img fixed={node.images[0].fixed} />
+                      </Link>
                     </div>
+                    {/*itm info */}
+
+                    {/*end of itm info */}
                   </div>
                 )
               })}

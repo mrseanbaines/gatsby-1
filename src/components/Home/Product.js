@@ -1,18 +1,24 @@
 import React from "react"
 import Img from "gatsby-image"
+import { Link } from "gatsby"
 
 export default function Product({ product }) {
   return (
     <div
-      className="col-10 col-sm-8 col-md-6 
-  col-lg-4 mx-auto my-3 "
+      className="col-11 col-md-3 my-4 d-flex
+                   mx-auto"
     >
       <div className="card" style={{ minHeight: "100%" }}>
-        <Img fluid={product.images[0].fluid} className="card-img-top" />
+        <Link to={`/shop/${product.slug}`}>
+          <Img fluid={product.images[0].fluid} className="card-img-top" />
+        </Link>
         <div className="card-body text-center">
           <h6>{product.title}</h6>
           <h6>£{product.price}</h6>
           <button className="btn btn-green mt-3">ADD TO CART</button>
+          <a href="/contact">
+            <button className="btn btn-green mt-3">MORE INFO</button>
+          </a>
         </div>
       </div>
     </div>
