@@ -12,7 +12,7 @@ const ShopPage = ({ data }) => (
     <SEO title="Shop" />
     <BackgroundSection title="Shop." styleClass="shop" />
     <Menu products={data.menu} />
-    <Products products={data.products} />
+    {/*<Products products={data.products} />*/}
   </Layout>
 )
 

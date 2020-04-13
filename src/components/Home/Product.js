@@ -16,9 +16,6 @@ export default function Product({ product }) {
           <h6>{product.title}</h6>
           <h6>£{product.price}</h6>
           <button className="btn btn-green mt-3">ADD TO CART</button>
-          <a href="/contact">
-            <button className="btn btn-green mt-3">MORE INFO</button>
-          </a>
         </div>
       </div>
     </div>
