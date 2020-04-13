@@ -79,7 +79,7 @@ export default class Navbar extends Component {
               )
             })}
             <li className="nav-item ml-sm-4">
-              <FaShoppingCart className="cart-icon" />
+              <FaShoppingCart className="cart-icon snipcart-checkout" />
             </li>
           </ul>
         </div>

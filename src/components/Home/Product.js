@@ -15,7 +15,16 @@ export default function Product({ product }) {
         <div className="card-body text-center">
           <h6>{product.title}</h6>
           <h6>£{product.price}</h6>
-          <button className="btn btn-green mt-3">ADD TO CART</button>
+          <button
+            className="btn btn-green mt-3 snipcart-add-item"
+            data-item-id={product.id}
+            data-item-price={product.price}
+            data-item-url="https://gatsby-ecommerce-project.netlify.com/shop"
+            data-item-image={product.images[0].fluid.src}
+            data-item-name={product.title}
+          >
+            ADD TO CART
+          </button>
         </div>
       </div>
     </div>
