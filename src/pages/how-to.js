@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
-import BlogList from "../components/Blog/BlogList"
+import HowToList from "../components/Blog/HowToList"
 const blog = ({ data }) => {
   return (
     <Layout>
-      <BlogList />
+      <HowToList />
     </Layout>
   )
 }

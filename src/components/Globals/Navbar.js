@@ -25,7 +25,7 @@ export default class Navbar extends Component {
       },
       {
         id: 4,
-        path: "/howto",
+        path: "/how-to",
         text: "How To",
       },
       {
