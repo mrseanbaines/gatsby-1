@@ -10,9 +10,7 @@ const Template = ({ data }) => {
     image,
   } = data.posts
 
-  const [mainImage] = image
-
-  console.log(mainImage)
+  /*const [mainImage] = image*/
 
   return <h1>{data.posts.title}</h1>
 
